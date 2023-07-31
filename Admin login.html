@@ -1,0 +1,95 @@
+
+
+<?php
+//Start the session to see if the user is authencticated user.
+session_start();
+//Check if the session variable for user authentication is set, if not redirect to login page.
+if(isset($_SESSION['IS_AUTHENTICATED']) && $_SESSION['IS_AUTHENTICATED'] == 1){
+//include the menu
+require('menu.php');
+<html>
+
+<head>
+  <title>Admin Login</title>
+  <link rel="stylesheet" href="adminlogin_css.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+
+<body style:'opacity:1;'>
+  <div class="content">
+    <div position='relative'>
+      <img src="images\blury-table-designify.png" style="position:absolute;margin-left:185px;height:100px;width:110px;">
+    </div>
+    <div class="heading" style='background-color:#FF2626;opacity:1;'>
+    <span style="padding-top:50px;"> ALL INDIA SPORTS TRAINING ACADEMY </span>
+    </div>
+    <div class="menu" style="opacity:0.8;">
+      <ul style="margin-top:0px;padding-top:6px;">
+        <b>
+          <li style="margin-left:350px;margin-top:4px;">|<a href="homepage.html"> Home </a>|</li>
+          <li style="margin-left:2px;margin-top:4px"><a href="about.html"> About </a>|</li>
+          <li style="margin-left:2px;margin-top:4px"><a href="achievements.html"> Achievements </a>|</li>
+          <li style="margin-left:2px;margin-top:4px"><a href="apply.html"> Apply </a>|</li>
+          <li style="margin-left:2px;margin-top:4px"><a href="facility.html"> Facility </a>|</li>
+          <li style="margin-left:2px;margin-top:4px"><a href="gallery.html"> Gallery </a>|</li>
+          <li style="margin-left:2px;margin-top:4px"><a href="contact.html"> Contact </a>|</li>
+          <li style="margin-left:2px;margin-top:4px"><a href="login.html"> Admin Login </a>|</li>
+        </b>
+      </ul>
+    </div>
+    <div style="position:absolute;padding-top:0px; top: 50px;margin-left:0px;height:50px;width:185px;font-size:24px;background-color:white;opacity:0.8;">
+    </div>
+  </div>
+  <br>
+
+  <br><br /><br /><br /><br />
+    <div>
+    <center><h1 style="color:white;opacity:0.8;"> -/ ALL INDIA SPORTS TRAINING ACADEMY /- </h1>
+    <table border="1" width="750" cellpadding="15" cellspacing="1" bordercolor="black" style="border-right-width:1;">
+    <tr style="background:#FF2626;opacity:0.8;"><td style="color:white;" colspan="6" align="center"> -/ ATHELETE /- </td></tr>
+    <tr style="background:white;opacity:0.8;"><td style="color:balck;" colspan="2" align="center"><a href="view_customer.php">View All Athelete Details</a></td>
+    <td style="color:black;" colspan="2" align="center"><a href="customer_stat.php">View Athelete Information</a></td>
+    <td style="color:black;" colspan="2" align="center"><a href="register_customer.php">Add/Update Athelete</a></tr>
+    <tr style="background:#FF2626;opacity:0.8;"><td style="color:white;" colspan="6" align="center"> -/ COACH /- </td></tr>
+    <tr style="background:white;opacity:0.8;"><td style="color:black;" colspan="2" align="center"><a href="view_account.php">View Coach Details</a>
+    <td style="color:black;" colspan="2" align="center"><a href="customer_stat.php">View Coach Information</a></td>
+    <td style="color:black;" colspan="2" align="center"><a href="register_account.php">Add/Update Coach</a></tr>
+    </table>
+    </center>';
+      <footer style="margin-top:300px;">
+    <div class="welcome">
+      <img src='images\blury-table-designify.png' alt="Image" height="140" width="160">
+      <span style="color: white;font-size: 25 px;"><br><br>Welcome to AIST Academy. It is <br> a leading sports academy in Jabalpur,<br>providing training for different sports <br> for the aspirants to achieve their goals.<br> </span>
+      <div class="vl"></div>
+    </div>
+    <div class="timing">
+      <span style="color: white;font-size: 30px;">Training Time: </span>
+      <hr style="width:40%;margin-left:0px;">
+      <br><span style="color: white;font-size: 27px;">Morning: &emsp; &emsp; 6.30 am - 8.30 am<br>
+        <br>Evening: &emsp; &emsp; 4.00 pm - 6.00 pm<br><br>
+        Sun: &emsp; &emsp; &emsp; &ensp; Closed<br></span>
+      <div class="vl" style="margin-left:425px;"></div>
+    </div>
+
+    <div class="address">
+      <span style="color: white;font-size: 30px;">Office Address:</span>
+      <hr style="color:black;width:45%;margin-left:0px;">
+      <span style="color: white;font-size: 25px;">All India Sports Training Academy,<br>Airport Rd, PDPM IIITDM Jabalpur Campus, <br>Khamaria, Jabalpur, Madhya Pradesh 482005
+        <br><br>mob: 076127 94094 Fax: +91-761-2632524<br>
+        <br> Email id: aista21@gmail.com<br></span>
+
+    </div>
+    <div class="developer">Web team- Adarsh Kumar, Soreddy Jitendra Reddy</div>
+
+  </footer>
+
+
+
+</body>
+
+</html>
